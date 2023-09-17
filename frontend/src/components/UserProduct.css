@@ -1,0 +1,17 @@
+.addToCart_button{
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    align-items: flex-start;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addToCart_button:hover{
+    background-color: #04448a;
+}
