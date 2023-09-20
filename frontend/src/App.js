@@ -6,6 +6,7 @@ import EditItem from "./components/EditItem";
 import Login from "./components/Login";
 import UserCart from "./components/UserCart";
 import { useState } from "react";
+import Detail from "./components/Detail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/additem" element={<AddItem />} />
         <Route path="/edititem/:id" element={<EditItem />} />
         <Route path="/cart" element={<UserCart />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   );

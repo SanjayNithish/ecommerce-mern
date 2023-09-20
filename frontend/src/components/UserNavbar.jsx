@@ -21,7 +21,7 @@ const UserNavbar = () => {
             type="button"
             onClick={() => navigate("/")}
           >
-            Login
+            Logout
           </button>
         </div>
       </div>

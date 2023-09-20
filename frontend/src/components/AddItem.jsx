@@ -20,6 +20,7 @@ const AddItem = () => {
   const [product, setProduct] = useState(initialProductState);
 
   const handleChange = (e) => {
+    e.preventDefault();
     const { name, value } = e.target;
     setProduct({
       ...product,
@@ -35,7 +36,7 @@ const AddItem = () => {
       console.log(product.data);
       alert("Product created successfully!");
       setProduct(initialProductState);
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       console.error("Error creating product:", error);
       alert("An error occurred while creating the product.");

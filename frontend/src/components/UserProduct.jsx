@@ -11,6 +11,10 @@ function UserProduct() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+  const handleDetail = (id) => {
+    navigate(`/detail/${id}`);
+  };
+
   const handleAddProduct = (id) => {
     var data = localStorage.getItem("cart");
     if (data === null) {
@@ -64,7 +68,11 @@ function UserProduct() {
     <div>
       <div className="product_container">
         {data.map((product) => (
-          <div key={product._id} className="card">
+          <div
+            key={product._id}
+            className="card"
+            onClick={() => handleDetail(product._id)}
+          >
             <div className="image">
               {product.images.map((image, index) => (
                 <img
